@@ -1,0 +1,27 @@
+@layout('main')
+@section('bg')
+<div class="first_container">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+        
+        <div class="bg_content">
+            <h2>Simple adonis Crud application</h2>
+        </div>
+        </div>
+        </div>
+    </div>
+</div>
+@endsection
+@section('content')
+
+<h1>{{title}}</h1>
+
+<ul>
+    @each(post in posts) 
+        <li>
+        {{post.title}}</li>
+    @endeach
+</ul>
+
+@endsection
